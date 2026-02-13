@@ -11,5 +11,10 @@ public class HorseBarnRunner
     HorseBarn barn = new HorseBarn();
 
     ArrayList<Horse> barnSpaces = new ArrayList<Horse>(barn.getSpaces());
+
+    for (Horse h : barnSpaces)
+    {
+      System.out.println(h);
+    }
   }
 } 
