@@ -15,6 +15,9 @@ public class HorseBarnRunner
     for (Horse h : barnSpaces)
     {
       System.out.println(h);
+      // if (h.getName().equals("Patches"))
+      // barnSpaces.remove(h);
+      // tries to change size of array while looping through array
     }
 
     int numSpaces = barnSpaces.size();
