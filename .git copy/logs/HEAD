@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 52785d9181956681fdd8cb6e044e9d1f37ef5bc2 Jonas <jonas.kaun@crpusd.org> 1769450473 -0800	commit (initial): First commit with assignment template
+52785d9181956681fdd8cb6e044e9d1f37ef5bc2 24d3d614992d23fc77dbb9fad76b6f92f7854c17 Jonas <jonas.kaun@crpusd.org> 1769534760 -0800	pull --tags -r origin main: Fast-forward
+24d3d614992d23fc77dbb9fad76b6f92f7854c17 581a911ad5fcfdf743b253750122c77e4caddebc Jonas <jonas.kaun@crpusd.org> 1769535949 -0800	commit: added max value finder
+581a911ad5fcfdf743b253750122c77e4caddebc 7b1467f79f9c938d6d0f5ee41e8e411a60d761b5 Jonas <jonas.kaun@crpusd.org> 1769535951 -0800	pull --tags -r origin main (start): checkout 7b1467f79f9c938d6d0f5ee41e8e411a60d761b5
+7b1467f79f9c938d6d0f5ee41e8e411a60d761b5 d16b9e66689eb367e591c848da69f33ed6736af2 Jonas <jonas.kaun@crpusd.org> 1769535951 -0800	pull --tags -r origin main (pick): added max value finder
+d16b9e66689eb367e591c848da69f33ed6736af2 d16b9e66689eb367e591c848da69f33ed6736af2 Jonas <jonas.kaun@crpusd.org> 1769535951 -0800	pull --tags -r origin main (finish): returning to refs/heads/main
+d16b9e66689eb367e591c848da69f33ed6736af2 0fcf490eb68c0defa1d998760eadedf33812df89 Jonas <jonas.kaun@crpusd.org> 1769536743 -0800	commit: in the middle of finding 18 year old player
+0fcf490eb68c0defa1d998760eadedf33812df89 e074af59a576663532eeea5700f4efb4ba3c907b Jonas <jonas.kaun@crpusd.org> 1769707208 -0800	commit: working on mystery psudocode 2 rn
+e074af59a576663532eeea5700f4efb4ba3c907b 23a2a01a195935f074ed0e222fb0e4a48489ba46 Jonas <jonas.kaun@crpusd.org> 1769792252 -0800	commit: flip order working
+23a2a01a195935f074ed0e222fb0e4a48489ba46 14e3c0d164dd5243e7ed53e22f74e1de39683bfc Jonas <jonas.kaun@crpusd.org> 1769795416 -0800	commit: now starting random permutation
+14e3c0d164dd5243e7ed53e22f74e1de39683bfc b3d142024fa438f532c8e8ddfd9fa8bed73e707d Jonas <jonas.kaun@crpusd.org> 1769796623 -0800	commit: finished up to random permutations
+b3d142024fa438f532c8e8ddfd9fa8bed73e707d 027ff97c5d24ed015ed1cab6ec1ec57adc743733 Jonas <jonas.kaun@crpusd.org> 1770002633 -0800	commit: random permutions code added, but has not began yet
