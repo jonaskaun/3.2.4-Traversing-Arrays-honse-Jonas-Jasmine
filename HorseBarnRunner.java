@@ -36,6 +36,23 @@ public class HorseBarnRunner
     //       numSpaces = barnSpaces.size();
     //     }
     //   }
-    
+    int i = 0;
+    numSpaces = barnSpaces.size();
+    while (i < numSpaces)
+    {
+      Horse h = barnSpaces.get(i);
+      if (h.getName().equals("Lady"))
+      {
+        System.out.println("Bye bye " + barnSpaces.remove(i));  
+        numSpaces = barnSpaces.size();
+        i--;
+      }
+      else if (h.getName().equals("Patches"))
+      {
+        System.out.println("Bye bye " +  barnSpaces.remove(i));
+        numSpaces = barnSpaces.size();
+      }
+      i++;
+    }
   }
 } 
