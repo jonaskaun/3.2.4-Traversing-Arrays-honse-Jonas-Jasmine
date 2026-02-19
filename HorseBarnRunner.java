@@ -54,5 +54,18 @@ public class HorseBarnRunner
       }
       i++;
     }
+    Horse princess = new Horse("Princess", 1445);
+    Horse cheif = new Horse("Chief", 1505);
+
+    numSpaces = barnSpaces.size();
+    while( i<numSpaces){
+      if (((barnSpaces.get(i)).getName()).equals("Duke")){
+        barnSpaces.remove(i);
+        barnSpaces.set(i, princess);
+      }
+
+      i++;
+
+    }
   }
 } 
