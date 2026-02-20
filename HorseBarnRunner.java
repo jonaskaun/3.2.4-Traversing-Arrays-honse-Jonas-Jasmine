@@ -36,6 +36,7 @@ public class HorseBarnRunner
     //       numSpaces = barnSpaces.size();
     //     }
     //   }
+    
     int i = 0;
     numSpaces = barnSpaces.size();
     while (i < numSpaces)
@@ -54,18 +55,34 @@ public class HorseBarnRunner
       }
       i++;
     }
+    
     Horse princess = new Horse("Princess", 1445);
     Horse cheif = new Horse("Chief", 1505);
+    System.out.println("ehhehiwhf");
 
+    i=0;
     numSpaces = barnSpaces.size();
-    while( i<numSpaces){
+    boolean stepTwo = false;
+    while( i < numSpaces){
       if (((barnSpaces.get(i)).getName()).equals("Duke")){
         barnSpaces.remove(i);
-        barnSpaces.set(i, princess);
+        barnSpaces.add(i, princess);
+        System.out.println("replace Duke with princess");
+        i=0;
+        stepTwo = true;
+        
+      }
+      else if(((barnSpaces.get(i)).getName()).equals("Silver")&&(stepTwo == true)){
+        barnSpaces.add(i+1,cheif);
+        System.out.println("add cheif after silver");
+
       }
 
+
+      numSpaces = barnSpaces.size();
       i++;
 
     }
+    System.out.println(barnSpaces);
   }
 } 
