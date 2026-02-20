@@ -94,6 +94,6 @@ public class HorseBarn
  }
 
  /*
- * Returns lightest and heaviest horses 
+ * Returns lightest and heaviest horses; also pls fix the thing with larger than average weight not returning weight AND name pls
  */
 }
