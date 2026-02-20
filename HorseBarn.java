@@ -76,6 +76,9 @@ public class HorseBarn
   return average;
  }
  
+ /*
+ * Returns horses that are larger than average weight
+ */
  public ArrayList<Horse> largerThanAverage()
  {
   ArrayList<Horse> temp = new ArrayList<Horse>(0);
@@ -89,4 +92,8 @@ public class HorseBarn
   }
   return temp;
  }
+
+ /*
+ * Returns lightest and heaviest horses 
+ */
 }
