@@ -61,4 +61,19 @@ public class HorseBarn
   {
     return spaces;
   }
+
+  /*
+  * Returns average weight of horses
+  */
+ public int getAverageWeight()
+ {
+  int temp = 0;
+  for (Horse a : spaces)
+  {
+   temp = a.getWeight();
+  }
+  return (temp / spaces.size());
+ }
+
+ 
 }
