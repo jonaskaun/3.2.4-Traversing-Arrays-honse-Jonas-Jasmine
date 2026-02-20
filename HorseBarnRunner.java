@@ -58,13 +58,16 @@ public class HorseBarnRunner
     
     Horse princess = new Horse("Princess", 1445);
     Horse cheif = new Horse("Chief", 1505);
-    System.out.println("ehhehiwhf");
+    Horse magic = new Horse("Magic", 1425);
+    Horse gypsy = new Horse("Gypsy", 1335);
 
     i=0;
     numSpaces = barnSpaces.size();
     boolean stepTwo = false;
+    boolean stepThree = false;
+    boolean stepFour = false;
     while( i < numSpaces){
-      if (((barnSpaces.get(i)).getName()).equals("Duke")){
+      if (((barnSpaces.get(i)).getName()).equals("Duke")&&(stepTwo == false)){
         barnSpaces.remove(i);
         barnSpaces.add(i, princess);
         System.out.println("replace Duke with princess");
@@ -72,9 +75,21 @@ public class HorseBarnRunner
         stepTwo = true;
         
       }
-      else if(((barnSpaces.get(i)).getName()).equals("Silver")&&(stepTwo == true)){
+      else if(((barnSpaces.get(i)).getName()).equals("Silver")&&(stepTwo == true)&&(stepThree == false)){
         barnSpaces.add(i+1,cheif);
         System.out.println("add cheif after silver");
+        i= 0;
+        stepThree = true;
+
+      }
+      else if(((barnSpaces.get(i)).getName()).equals("Buddy")&&(stepThree == true)&&(stepFour == false)){
+        barnSpaces.add(i, gypsy);
+        barnSpaces.add(i+2,magic);
+        System.out.println("buddy sandwich which gypsy and magic");
+        stepFour = true;
+
+
+
 
       }
 
