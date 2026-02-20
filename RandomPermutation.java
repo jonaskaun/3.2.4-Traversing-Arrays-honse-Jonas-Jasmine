@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 /*
  * Activity 3.1.4
  *
@@ -30,7 +33,24 @@ public class RandomPermutation
       
       return r;
    }
-   
+
+   //   this is meant to be an arrray list class that takes an array list and returns a randomized verison
+   public static ArrayList<Horse> next(ArrayList<Horse> honse)
+   {
+      ArrayList<Horse> r = new ArrayList<Horse>();
+      ArrayList<Horse> p = new ArrayList<Horse>();
+      r = honse;
+      p = honse;
+      
+      for (int n = honse.size(); n > 0; n--)
+      {
+        int pos = (int) (Math.random() * n);
+        r.get(n-1) = p.get(pos);
+        p.get(pos) = p.get(n-1);
+      }
+      
+      return r;
+   }
    /**
     * Genereate one random permutation of a provided array of strings
     * in parameter seq.
