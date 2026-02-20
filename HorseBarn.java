@@ -67,13 +67,26 @@ public class HorseBarn
   */
  public int getAverageWeight()
  {
-  int temp = 0;
+  int sum = 0;
   for (Horse a : spaces)
   {
-   temp = a.getWeight();
+   sum += a.getWeight();
   }
-  return (temp / spaces.size());
+  int average = (sum / spaces.size());
+  return average;
  }
-
  
+ public ArrayList<Horse> largerThanAverage()
+ {
+  ArrayList<Horse> temp = new ArrayList<Horse>(0);
+  int average = getAverageWeight();
+  for (Horse a : spaces)
+  {
+    if (a.getWeight() > average)
+    {
+      temp.add(a);
+    }
+  }
+  return temp;
+ }
 }
