@@ -45,8 +45,10 @@ public class RandomPermutation
       for (int n = honse.size(); n > 0; n--)
       {
         int pos = (int) (Math.random() * n);
-        r.get(n-1) = p.get(pos);
-        p.get(pos) = p.get(n-1);
+
+
+        Horse temp = p.get(pos);
+        r.set(n-1,temp);
       }
       
       return r;
