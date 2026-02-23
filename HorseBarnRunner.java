@@ -99,5 +99,7 @@ public class HorseBarnRunner
 
     }
     System.out.println(barnSpaces);
+
+    System.out.println();
   }
 } 
