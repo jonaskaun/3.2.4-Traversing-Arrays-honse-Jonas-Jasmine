@@ -102,7 +102,21 @@ public class HorseBarnRunner
     System.out.println("Full barn layout : " +barnSpaces+"\n");
 
 
-    System.out.println("randomized barn layout : " + r.next(barnSpaces));
+
+    ArrayList<Horse> barnRandom = new ArrayList<Horse>(r.next(barnSpaces));
+    System.out.println("randomized barn layout : " + barnRandom) ;
+    // create horse pairs
+    i = 0;
+    for(Horse h: barnRandom ){
+
+      if (i%2 == 0){
+        System.out.print(h +" and ");
+      }
+      else{
+        System.out.print(h+"\n");
+      }
+      i++;
+    }
 
     System.out.println(barnSpaces);
     System.out.println(barn.getAverageWeight());
