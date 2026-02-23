@@ -50,7 +50,7 @@ public class RandomPermutation
       for (int n = 0; updatingSize!= 0; n++)
       {
         
-        int pos = (int) (Math.random() * updatingSize-1);
+        int pos = (int) (Math.random() * updatingSize);
 
 
         Horse temp = p.get(pos);

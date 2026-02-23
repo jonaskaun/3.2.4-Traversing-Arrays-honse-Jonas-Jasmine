@@ -99,10 +99,10 @@ public class HorseBarnRunner
       i++;
 
     }
-    System.out.println("Full barn layout" +barnSpaces);
+    System.out.println("Full barn layout : " +barnSpaces+"\n");
 
 
-    System.out.println("randomized barn layout" + r.next(barnSpaces));
+    System.out.println("randomized barn layout : " + r.next(barnSpaces));
 
   }
 } 
