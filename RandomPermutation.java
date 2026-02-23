@@ -40,18 +40,23 @@ public class RandomPermutation
       ArrayList<Horse> r = new ArrayList<Horse>();
       ArrayList<Horse> p = new ArrayList<Horse>();
       ArrayList<Horse> excluded = new ArrayList<Horse>();
+      int i = 0;
+      for (Horse h : honse) {
+        p.add(h);
+        i++;
+      }
 
-      r = honse;
-      p = honse;
       int updatingSize = p.size();
-      for (int n = updatingSize; n > 0; n--)
+      for (int n = 0; updatingSize!= 0; n++)
       {
-        int pos = (int) (Math.random() * n);
+        
+        int pos = (int) (Math.random() * updatingSize-1);
 
 
         Horse temp = p.get(pos);
+        
+        r.add(temp);
         p.remove(pos);
-        r.set(n-1,temp);
 
         updatingSize = p.size();
       }
