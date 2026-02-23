@@ -70,14 +70,14 @@ public class HorseBarnRunner
       if (((barnSpaces.get(i)).getName()).equals("Duke")&&(stepTwo == false)){
         barnSpaces.remove(i);
         barnSpaces.add(i, princess);
-        System.out.println("replace Duke with princess");
+        System.out.println("replace Duke with Princess");
         i=0;
         stepTwo = true;
         
       }
       else if(((barnSpaces.get(i)).getName()).equals("Silver")&&(stepTwo == true)&&(stepThree == false)){
         barnSpaces.add(i+1,cheif);
-        System.out.println("add cheif after silver");
+        System.out.println("add Cheif after silver");
         i= 0;
         stepThree = true;
 
