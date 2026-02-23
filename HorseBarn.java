@@ -83,6 +83,9 @@ public class HorseBarn
  {
   ArrayList<Horse> temp = new ArrayList<Horse>(0);
   int average = getAverageWeight();
+  String rVariable = " ";
+  String horseNames = " ";
+  int horseWeight = 0;
   for (Horse a : spaces)
   {
     if (a.getWeight() > average)

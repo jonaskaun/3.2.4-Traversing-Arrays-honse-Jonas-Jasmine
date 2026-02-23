@@ -104,5 +104,13 @@ public class HorseBarnRunner
 
     System.out.println("randomized barn layout : " + r.next(barnSpaces));
 
+    System.out.println(barnSpaces);
+    System.out.println(barn.getAverageWeight());
+  
+    for (Horse h : barn.largerThanAverage())
+    {
+      System.out.println("Horses that are larger than average weight: " + h.getName() + "; Weight: " + h.getWeight());
+    }
+  
   }
-} 
+}
