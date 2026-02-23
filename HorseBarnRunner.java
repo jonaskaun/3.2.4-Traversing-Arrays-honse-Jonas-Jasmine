@@ -9,6 +9,7 @@ public class HorseBarnRunner
   public static void main(String[] args)
   {
     HorseBarn barn = new HorseBarn();
+    RandomPermutation r = new RandomPermutation();
 
     ArrayList<Horse> barnSpaces = new ArrayList<Horse>(barn.getSpaces());
 
@@ -101,5 +102,7 @@ public class HorseBarnRunner
     System.out.println(barnSpaces);
 
     System.out.println();
+
+    System.out.println(r.next(barnSpaces));
   }
 } 

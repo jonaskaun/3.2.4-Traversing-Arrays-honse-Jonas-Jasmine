@@ -35,20 +35,25 @@ public class RandomPermutation
    }
 
    //   this is meant to be an arrray list class that takes an array list and returns a randomized verison
-   public static ArrayList<Horse> next(ArrayList<Horse> honse)
+   public ArrayList<Horse> next(ArrayList<Horse> honse)
    {
       ArrayList<Horse> r = new ArrayList<Horse>();
       ArrayList<Horse> p = new ArrayList<Horse>();
+      ArrayList<Horse> excluded = new ArrayList<Horse>();
+
       r = honse;
       p = honse;
-      
-      for (int n = honse.size(); n > 0; n--)
+      int updatingSize = p.size();
+      for (int n = updatingSize; n > 0; n--)
       {
         int pos = (int) (Math.random() * n);
 
 
         Horse temp = p.get(pos);
+        p.remove(pos);
         r.set(n-1,temp);
+
+        updatingSize = p.size();
       }
       
       return r;
