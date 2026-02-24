@@ -100,6 +100,26 @@ public class HorseBarnRunner
 
     }
     System.out.println("Full barn layout : " +barnSpaces+"\n");
+    String maxWeight = "";
+    Horse temp = new Horse("",0);
+    for(i =0;i<barnSpaces.size();i++){
+      if (((barnSpaces.get(i)).getWeight())> (temp).getWeight()){
+        temp = barnSpaces.get(i);
+
+      }
+
+    }
+    System.out.println("horse weigh most is: "+ temp.getName());
+    for(i =0;i<barnSpaces.size();i++){
+      if (((barnSpaces.get(i)).getWeight())< (temp).getWeight()){
+        temp = barnSpaces.get(i);
+
+      }
+    }
+    System.out.println("hoorse lest weight is : "+ temp.getName());
+
+      
+    
 
 
 
